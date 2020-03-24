@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <div class="container">
+    <div class="headline">
+      Library
+    </div>
+  </div>
+</mat-toolbar>
+
+<div class="container">
+  <div *ngIf="books && books.length>0; else empty" class="books-box">
+    <app-book-item *ngFor="let item of books" [data]="item"></app-book-item>
+  </div>
+</div>
+
+<ng-template #empty>
+  <div class="empty">
+    List of books are empty.
+    <br>
+    But you can create a book <a [routerLink]="'/create-book'">Create a books</a>
+  </div>
+</ng-template>

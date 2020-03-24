@@ -1,0 +1,15 @@
+.example-card {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 15px 25px;
+  cursor: pointer;
+}
+
+.mat-card-image:first-child{
+  height: 250px;
+  padding: 20px;
+}
+
+.description{
+  margin: 10px 0;
+}

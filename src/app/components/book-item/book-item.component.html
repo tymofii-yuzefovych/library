@@ -1,0 +1,13 @@
+<mat-card *ngIf="data" [routerLink]="'/book-detail/'+data.id" class="example-card">
+  <img alt="Photo of a Shiba Inu" mat-card-image src="/assets/images/book.svg">
+  <mat-card-content>
+    <mat-card-title>{{data.title}}</mat-card-title>
+    <mat-card-subtitle>{{data.author}}</mat-card-subtitle>
+    <mat-card-subtitle>
+      Pages Quantity: {{data.pagesQuantity}}
+    </mat-card-subtitle>
+    <p [clamp]="4" class="description">
+      {{data.description}}
+    </p>
+  </mat-card-content>
+</mat-card>

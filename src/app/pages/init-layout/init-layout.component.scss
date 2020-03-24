@@ -1,0 +1,14 @@
+.books-box{
+  display: flex;
+  align-items: flex-start;
+  float-wrap: wrap;
+  margin: 50px auto;
+}
+
+.empty{
+  text-align: center;
+  margin: 50px auto;
+  a{
+    text-decoration: underline;
+  }
+}

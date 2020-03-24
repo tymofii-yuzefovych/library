@@ -1,0 +1,13 @@
+<div class="header">
+  <div class="container">
+    <div class="header-box">
+      <div [routerLink]="''" class="logo">
+        <img alt="" src="/assets/images/library.svg">
+      </div>
+      <nav>
+        <a [routerLinkActiveOptions]="{ exact: true }" routerLink="/" routerLinkActive="active">Home</a>
+        <a routerLink="create-book" routerLinkActive="active">Create</a>
+      </nav>
+    </div>
+  </div>
+</div>

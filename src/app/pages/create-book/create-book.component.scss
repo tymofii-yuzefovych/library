@@ -1,0 +1,22 @@
+.form{
+  margin: 50px auto;
+  max-width: 500px;
+  width: 100%;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  .example-full-width{
+    width: 100%;
+    textarea{
+      height: 140px;
+      resize: none;
+    }
+  }
+}
+::ng-deep .mat-simple-snackbar {
+  justify-content: center!important;
+  color: #fff!important;
+}
